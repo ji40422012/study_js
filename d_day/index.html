@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>D-Day 날짜 계산기</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="card">
+        <div class="icon">📅</div>
+
+        <h1>D-Day 날짜 계산기</h1>
+
+        <p class="description">
+            목표일까지 남은 일수를 계산하거나<br>
+            원하는 일수 뒤의 날짜를 확인하세요.
+        </p>
+
+        <section class="calculator-section">
+            <h2>목표일까지 남은 날짜 계산</h2>
+
+            <label for="eventName">일정 이름</label>
+            <input
+                type="text"
+                id="eventName"
+                placeholder="예: 시험일"
+            >
+
+            <label for="targetDate">목표 날짜</label>
+            <input
+                type="date"
+                id="targetDate"
+            >
+
+            <button type="button" id="calculateDdayButton">
+                남은 일수 계산
+            </button>
+
+            <div id="ddayResult" class="result">
+                일정 이름과 목표 날짜를 입력해 주세요.
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="calculator-section">
+            <h2>며칠 뒤 날짜 계산</h2>
+
+            <label for="daysLater">오늘부터 며칠 뒤인가요?</label>
+            <input
+                type="number"
+                id="daysLater"
+                min="0"
+                step="1"
+                placeholder="예: 100"
+            >
+
+            <button type="button" id="calculateDateButton">
+                날짜 계산
+            </button>
+
+            <div id="dateResult" class="result">
+                일수를 입력해 주세요.
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
